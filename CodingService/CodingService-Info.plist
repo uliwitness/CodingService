@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.thevoidsoftware.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2011 The Void Software. All rights reserved.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSPortName</key>
+			<string>CodingService</string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Enclose in Brackets</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>encloseInBrackets</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSServiceDescription</key>
+			<string>Takes the given text and encloses it in regular, rounded parentheses.</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSServiceCategory</key>
+				<string>public.text</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NSPortName</key>
+			<string>CodingService</string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Enclose in Square Brackets</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>encloseInSquareBrackets</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSServiceDescription</key>
+			<string>Takes the given text and encloses it in square brackets.</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSServiceCategory</key>
+				<string>public.text</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NSPortName</key>
+			<string>CodingService</string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Enclose in Quotes</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>encloseInQuotes</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSServiceDescription</key>
+			<string>Takes the given text and encloses it in quotes, correctly escaping it for C.</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSServiceCategory</key>
+				<string>public.text</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NSPortName</key>
+			<string>CodingService</string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Copy as Constant Definition</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>copyConstantDeclaration</string>
+			<key>NSServiceDescription</key>
+			<string>Takes the given identifier and places a declaration of an NSString variable with the same name and content on the clipboard, ready to paste.</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSServiceCategory</key>
+				<string>public.text</string>
+			</dict>
+		</dict>
+	</array>
+	<key>LSBackgroundOnly</key>
+	<true/>
+</dict>
+</plist>
