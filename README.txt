@@ -1,6 +1,6 @@
 CODING SERVICE
 
-A service that helps programmers restore some of the scripts they used to have in Xcode 3 TO Xcode 4.
+A service that helps programmers restore some of the scripts they used to have in Xcode 3 to Xcode 4.
 
 
 INSTALLATION

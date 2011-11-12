@@ -1,3 +1,7 @@
 /* Localized versions of Info.plist keys */
 
 "Enclose in Brackets" = "Enclose in Brackets";
+"Enclose in Square Brackets" = "Enclose in Square Brackets";
+"Enclose in Curly Brackets" = "Enclose in Curly Brackets";
+"Enclose in Quotes" = "Enclose in Quotes";
+"Copy as Constant Definition" = "Copy as Constant Definition";

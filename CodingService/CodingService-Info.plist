@@ -90,6 +90,32 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
+				<string>Enclose in Curly Brackets</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>encloseInCurlyBrackets</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSServiceDescription</key>
+			<string>Takes the given text and encloses it in curly brackets.</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSServiceCategory</key>
+				<string>public.text</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NSPortName</key>
+			<string>CodingService</string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
 				<string>Enclose in Quotes</string>
 			</dict>
 			<key>NSMessage</key>
@@ -123,6 +149,32 @@
 			<key>NSServiceDescription</key>
 			<string>Takes the given identifier and places a declaration of an NSString variable with the same name and content on the clipboard, ready to paste.</string>
 			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSServiceCategory</key>
+				<string>public.text</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NSPortName</key>
+			<string>CodingService</string>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Wrap in #if &lt;clipboard&gt;</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>pasteAsIfdefWrappingSelection</string>
+			<key>NSServiceDescription</key>
+			<string>Takes an identifier on the clipboard and uses it as the define to #if the selected text with.</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSReturnTypes</key>
 			<array>
 				<string>NSStringPboardType</string>
 			</array>
