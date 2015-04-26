@@ -137,6 +137,8 @@
 	NSString *pboardString = [pboard stringForType: NSPasteboardTypeString];
 	pboardString = [pboardString stringByReplacingOccurrencesOfString: @"\\" withString: @"\\\\" options: 0 range: NSMakeRange(0,[pboardString length])];
 	pboardString = [pboardString stringByReplacingOccurrencesOfString: @"\"" withString: @"\\\"" options: 0 range: NSMakeRange(0,[pboardString length])];
+	pboardString = [pboardString stringByReplacingOccurrencesOfString: @"\r" withString: @"\\r" options: 0 range: NSMakeRange(0,[pboardString length])];
+	pboardString = [pboardString stringByReplacingOccurrencesOfString: @"\n" withString: @"\\n" options: 0 range: NSMakeRange(0,[pboardString length])];
 	NSString *newString = [NSString stringWithFormat: @"\"%@\"", pboardString];
 	if (!newString)
 	{
